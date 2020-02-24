@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import CatList from './CatList'
-import fetchCats from './actions/catActions'
+import { fetchCats } from './actions/catActions'
 
 class App extends Component {   
   
   componentDidMount() {
+    console.log(this.props)
     this.props.fetchCats()
   }
 

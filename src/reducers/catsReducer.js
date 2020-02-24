@@ -12,7 +12,7 @@ const catsReducer = (state = {cats: [], loading: false}, action) => {
             return {
                 ...state,
                 cats: action.cats,
-                locading: false
+                loading: false
             }
         default:
             return state
